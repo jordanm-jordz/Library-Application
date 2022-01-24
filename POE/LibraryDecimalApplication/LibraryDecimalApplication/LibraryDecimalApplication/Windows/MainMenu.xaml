@@ -1,0 +1,38 @@
+﻿<Window x:Name="MainMenu1" x:Class="LibraryDecimalApplication.Windows.MainMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LibraryDecimalApplication.Windows"
+        mc:Ignorable="d"
+        Height="600" Width="800" Title="Main Menu" WindowStartupLocation="CenterScreen" Icon="../Resources/Images/dewey.ico" Loaded="MainMenu1_Loaded">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Gray" Offset="0"/>
+                <GradientStop Color="#7393B3" Offset="0.362"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Button Style="{StaticResource RoundButtonTemplate}"  x:Name="btReplaceBooks" Content="Replacing Books" HorizontalAlignment="Left" Margin="45,280,0,0" VerticalAlignment="Top" Width="132" Height="40" FontSize="16" FontFamily="Yu Gothic UI Light" RenderTransformOrigin="0.14,0.475" Click="BtReplaceBooks_Click"/>
+        <Label x:Name="lbCurrentUser" Content="(user)" HorizontalAlignment="Left" Margin="600,18,0,0" VerticalAlignment="Top" FontSize="16" FontFamily="Yu Gothic UI Light" Foreground="White" RenderTransformOrigin="1.083,-0.903"/>
+        <Button Style="{StaticResource RoundButtonTemplate}"  x:Name="btGame" Content="Game" HorizontalAlignment="Left" Margin="600,280,0,0" VerticalAlignment="Top" Width="126" Height="40" FontSize="16" FontFamily="Yu Gothic UI Light" RenderTransformOrigin="0.14,0.475" IsEnabled="True" Click="btGame_Click"/>
+        <Button Style="{StaticResource RoundButtonTemplate}"  x:Name="btIdentifyingAreas" Content="Identifying Areas" HorizontalAlignment="Left" Margin="239,280,0,0" VerticalAlignment="Top" Width="132" Height="40" FontSize="16" FontFamily="Yu Gothic UI Light" RenderTransformOrigin="0.14,0.475" IsEnabled="True" Click="btIdentifyingAreas_Click" />
+        <Image HorizontalAlignment="Left" Height="115" Margin="50,147,0,0" VerticalAlignment="Top" Width="127" Source="../Resources/Icons/replacebooks.png"/>
+        <Label x:Name="lblMenu" Content="Main Menu" Margin="227,18,0,0" FontSize="45" FontFamily="Calibri" VerticalAlignment="Top" Width="230" Height="79" HorizontalAlignment="Left" Background="Transparent">
+        </Label>
+        <Image HorizontalAlignment="Left" Height="39" VerticalAlignment="Top" Width="40" Margin="742,7,0,0" RenderTransformOrigin="0.533,2"/>
+        <Image HorizontalAlignment="Left" Height="39" Margin="307,10,0,0" VerticalAlignment="Top" Width="41" />
+        <Label x:Name="lblTestsDone" Content="You have completed all your tests" FontSize="14" FontFamily="Yu Gothic UI Light" HorizontalAlignment="Left" Margin="50,245,0,0" VerticalAlignment="Top" Height="30" Width="243" Foreground="Gray" Visibility="Hidden"/>
+        <Image HorizontalAlignment="Left" Height="115" Margin="245,147,0,0" VerticalAlignment="Top" Width="126" RenderTransformOrigin="1.06,0.453" Source="../Resources/Icons/identifyareas.png"/>
+        <Image HorizontalAlignment="Left" Height="115" Margin="600,147,0,0" VerticalAlignment="Top" Width="126" RenderTransformOrigin="1.06,0.453" Source="../Resources/Icons/game.png"/>
+        <Image HorizontalAlignment="Left" Height="87" Margin="10,10,0,0" VerticalAlignment="Top" Width="96" Source="../Resources/Icons/logo.png"/>
+        <Button Style="{StaticResource RoundButtonTemplate}"  x:Name="btSignOut" Content="Sign Out" HorizontalAlignment="Left" Margin="400,461,0,0" VerticalAlignment="Top" Width="132" Height="40" FontSize="16" FontFamily="Yu Gothic UI Light" RenderTransformOrigin="0.14,0.475" Click="btSignOut_Click" />
+        <Image HorizontalAlignment="Left" Height="115" Margin="400,341,0,0" VerticalAlignment="Top" Width="127" Source="../Resources/Icons/logout.png"/>
+        <Button Style="{StaticResource RoundButtonTemplate}"  x:Name="btLeaderboard" Content="Leaderboards" HorizontalAlignment="Left" Margin="135,456,0,0" VerticalAlignment="Top" Width="180" Height="40" FontSize="16" FontFamily="Yu Gothic UI Light" RenderTransformOrigin="0.14,0.475" IsEnabled="True" Click="btLeaderboard_Click"/>
+        <Image HorizontalAlignment="Left" Height="115" Margin="167,341,0,0" VerticalAlignment="Top" Width="126" RenderTransformOrigin="1.06,0.453" Source="/LibraryDecimalApplication;component/Resources/Images/leaderboard.png"/>
+        <Image HorizontalAlignment="Left" Height="34" Margin="570,18,0,0" VerticalAlignment="Top" Width="38" Source="/LibraryDecimalApplication;component/Resources/Images/user.png" RenderTransformOrigin="4.99,0.494"/>
+        <Image HorizontalAlignment="Left" Height="115" Margin="430,147,0,0" VerticalAlignment="Top" Width="126" RenderTransformOrigin="1.06,0.453" Source="/LibraryDecimalApplication;component/Resources/Icons/callnumbers.png"/>
+        <Button Style="{StaticResource RoundButtonTemplate}"  x:Name="btcallnumbers" Content="Call Numbers" HorizontalAlignment="Left" Margin="424,280,0,0" VerticalAlignment="Top" Width="132" Height="40" FontSize="16" FontFamily="Yu Gothic UI Light" RenderTransformOrigin="0.14,0.475" IsEnabled="True" Click="btIdentifyingAreas_Click" />
+
+    </Grid>
+</Window>
